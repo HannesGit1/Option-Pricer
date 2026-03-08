@@ -26,10 +26,6 @@ The API then returns some values, as well as 50 rows of the Monte Carlo array, w
 * `requirements.txt`: A list of the Python packages needed to run this project.
 * `Dockerfile` & `.dockerignore`: The blueprints to build and run the isolated container.
 
-### The Biggest Challenge I Faced
-
-The hardest part of this project was efficiently implementing the Monte Carlo simulation. At first, I used standard Python `for` loops to simulate 10,000 future stock paths. It worked, but it was rather slow. After doing some research, I learned about **NumPy** and vectorization. I rewrote the simulation to use NumPy arrays instead of loops. By doing the math on the entire matrix at once, the execution time dropped from a few seconds to just a few milliseconds!
-
 ### How to Run It
 
 There are two options to run this project:
